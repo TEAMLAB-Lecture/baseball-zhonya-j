@@ -282,11 +282,11 @@ def is_no(one_more_input):
 def main():
     print("Play Baseball")
     random_number = get_not_duplicated_three_digit_number()
-    print("Random Number is :",random_number)
+    print("Random Number is :",str(random_number))
     while True:
         user_input=""
         while True:
-            user_input = input("Input guess number : ")
+            user_input = input("Input guess number :")
             if not is_validated_number(user_input):
                 print("Wrong Input, Input again")
             else:
